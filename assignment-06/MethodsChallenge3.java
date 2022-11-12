@@ -13,8 +13,15 @@ Input: 764
 Returns: 17
 7 + 6 + 4 = 17
 */
-public class MethodsChallenge3 {
-
+public class MethodsChallenge3 { 
+    public static int sumOfDig (int number ) {
+        String s = String.valueOf(number);
+        for(int i = 0; i < s.length(); i++){
+            s = s.substring(i) + " ";
+        }
+        int sum = Integer.valueOf(s);
+        return sum;
+    }
     public static void main(String[] args) {
         System.out.println("input is 23224; the sum is " + sumOfDig(23224));
         System.out.println("input is 0; the sum is " + sumOfDig(0));
