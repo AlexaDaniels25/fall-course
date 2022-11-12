@@ -17,6 +17,13 @@
 
 public class LoopsChallenge3 {
   public static void print_pyramid(int rows) {
+    String x = " "; //put "# "?
+    String savedhashtags = " ";
+    for(int i = 0 ;i < rows ; i++){
+      System.out.println(x);
+      savedhashtags = x + "# ";
+      x = savedhashtags;
+    }
     // write the code for making and printing the pyramid here
     // use " " to add space between # in pyramid
   }
