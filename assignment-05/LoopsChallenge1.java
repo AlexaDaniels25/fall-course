@@ -9,7 +9,11 @@ public class LoopsChallenge1 {
     public static String test(int num) {
         String answer = "";
         // Enter your code here; store your final result in the variable answer
-        
+        for(int i = 1; i < 11; i++){
+            int ans = num*i;
+            answer = answer + String.valueOf(ans) + " ";
+         }
+         
         return answer;
     }
     public static void main(String args[]){

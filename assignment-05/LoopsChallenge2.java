@@ -15,13 +15,21 @@ to the "fib" string; the method will then return the fib string and print it
 public class LoopsChallenge2 {
     public static String createFibString(int n) {
         String fib = "";
-        for(int i=0; n; ){
+        int fiblast = 0;
+        int fiblast2 = 0;
+        for(int i=0; i<n; i++ ){
             if(n>1){
-                int j = (i-1) + (i-2); 
+                int j = fiblast + fiblast2; 
                 fib = " " + j;
+                fiblast2 = fiblast;
+                fiblast = j;
             }
-            else{
-                fib = "0";
+            else if(i == 0){
+                fib = "0 ";
+            }
+            else if(i == 1){
+                fib += "1 ";
+                fiblast = 1;
             }
         }
         // Enter your code here
