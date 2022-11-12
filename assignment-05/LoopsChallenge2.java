@@ -17,8 +17,8 @@ public class LoopsChallenge2 {
         String fib = "";
         int fiblast = 0;
         int fiblast2 = 0;
-        for(int i=0; i<n; i++ ){
-            if(n>1){
+        for(int i=0; i<= n; i++ ){
+            if(i>1){
                 int j = fiblast + fiblast2; 
                 fib = " " + j;
                 fiblast2 = fiblast;
