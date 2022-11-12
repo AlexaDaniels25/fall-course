@@ -17,7 +17,21 @@ Method Returns: 0
 */
 
 public class MethodsChallenge1 {
-
+    public static int checkSum(int num1, int num2) {
+        int sum = num1 + num2;
+        int check = 0;
+        if (sum < 100) {
+            check = 0;
+        
+        }
+        else if (sum > 100) {
+            check = 1;
+        }
+        else {
+            check = 2;
+        }
+        return check;
+    }
     public static void main(String[] args) {
         System.out.println(checkSum(4, 80));
         /* add more statements like the above print statement to test your code */
