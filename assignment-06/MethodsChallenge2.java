@@ -24,6 +24,47 @@ If any other grade is given, simply return a -1.
 Hint: Revise conditionals and see what helps keep your code short and brief
 */
 public class MethodsChallenge2 {
+    public static double letterToGPA (String grade) {
+        double gpa = 0;
+        if (grade == "A+") {
+            gpa = 4;
+        }
+        else if (grade == "A") {
+            gpa = 4;
+        }
+        else if (grade == "A-") {
+            gpa = 3.7;
+        }
+        else if (grade == "B+") {
+            gpa = 3.3;
+        }
+        else if (grade == "B") {
+            gpa = 3;
+        }
+        else if (grade == "B-") {
+            gpa = 2.8;
+        }
+        else if (grade == "C+") {
+            gpa = 2.5;
+        }
+        else if (grade == "C") {
+            gpa = 2;
+        }
+        else if (grade == "C-") {
+            gpa = 1.8;
+        }
+        else if (grade == "D") {
+            gpa = 1.5;
+        }
+        else if (grade == "F") {
+            gpa = 0;
+        }
+        else {
+            gpa = -1;
+        }
+
+        return gpa;
+    }
 
     public static void main(String[] args) {
         System.out.println("the grade point of an A is: " + letterToGPA("A"));
