@@ -24,25 +24,46 @@ Schedule (subject to change based on student progress):
 * The two-hour office-hour/instruction will be Saturday, Oct 22, 2:30 to 4:30pm
 
 5. Oct. 23 to Oct. 29 
-* Complete “Loops” on Educative.io course
-* Practice Using VS Code Debugger
-* The two-hour office-hour/instruction will be Saturday, Oct 29, 2:30 to 4:30pm
-
+* Complete “Conditional Statements” on Educative.io course
+* Start "Loops" on Educative.io course
+    * Practice Using VS Code Debugger
+* Students should also practice “committing” and “reverting” using GitHub Desktop
+* The two-hour office-hour/instruction will be Saturday, Oct 29, 3:30 to 5:30pm
+    * please tell metors today if you are not able to access github repository for this course  
+    * any questions on conditionals?
+    * loops
+        * try to figure out for yourself how many times a loop goes around
+        * loop example
+        * fib example
+            * y = x^2 + 2x also written as f(x) = x^2 + 2x
+            * fib(n) = fib(n-2) + fib(n-1)
+            * discuss inputs and outputs
+    * course difficulty increasing
+    * preview next couple of weeks
+    
 6. Oct. 30 to Nov. 5
-* Complete “Methods” on Educative.io course
-* Read FRC documentation re command-based robot
-* The two-hour office-hour/instruction will be Saturday, Nov. 5
-    * Discussion of pass by value v. pass by reference
+* Complete “Loops” on Educative.io course
+* Start “Methods” on Educative.io course
+* The two-hour office-hour/instruction will be Saturday, Nov. 5, 2:30 to 4:30pm
 
-7. Nov. 5 to Nov. 12 
+
+___7. Nov. 5 to Nov. 12___
+* Complete "Loops" on Educative.io course
+* Complete "Methods" on Educative.io course 
+* The two-hour office-hour/instruction will be Saturday, Nov. 12, 2:30 to 4:30
+    * Mentors will help students progress on this checklist:<br>
+        [ ] challenge 1 of loops<br>
+        [ ] challenge 2 of loops<br>
+        [ ] challenge 3 of loops<br>
+        [ ] challenge 1 of methods<br>
+        [ ] challenge 2 of methods<br>
+        [ ] challenge 3 of methods<br>
+        [ ] challenge 4 of methods<br>
+
+8. Nov. 12 to Nov. 19 (Last Week!)
 * Complete “Classes and Inheritance” on Educative.io course
-* Continue to read FRC documentation re command-based robot
-* The two-hour office-hour/instruction will be Saturday, Nov. 12
-
-8. Nov. 12 to Nov. 19
-* Review FRC Docs re Romi
-* Review Romi Code
-* The two-hour office-hour/instruction will be Saturday, Nov. 19
-* Students will work on programming the ROMI
-
+* The two-hour office-hour/instruction will be Saturday, Nov. 19, 2:30 to 4:30
+    * "Fun" programming challenge?
+    * Discussion of "why inheritence"?
+    * Discussion of pass by value v. pass by reference?
 
