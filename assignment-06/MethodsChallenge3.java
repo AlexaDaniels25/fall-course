@@ -15,11 +15,12 @@ Returns: 17
 */
 public class MethodsChallenge3 { 
     public static int sumOfDig (int number ) {
+        int sum = 0;
         String s = String.valueOf(number);
         for(int i = 0; i < s.length(); i++){
-            s = s.substring(i) + " ";
+            s = s.substring(i);
+            sum += Integer.valueOf(s);
         }
-        int sum = Integer.valueOf(s);
         return sum;
     }
     public static void main(String[] args) {
