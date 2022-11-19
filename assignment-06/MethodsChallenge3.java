@@ -16,11 +16,16 @@ Returns: 17
 public class MethodsChallenge3 { 
     public static int sumOfDig (int number ) {
         int sum = 0;
-        String s = String.valueOf(number);
-        for(int i = 0; i < s.length(); i++){
-            s = s.substring(i);
-            sum += Integer.valueOf(s);
-        }
+        int i = 0;
+        String s;
+        String str1 = String.valueOf(number);
+        for(i = 0; i < str1.length();i++){
+            s = str1.substring(i,i+1);
+            if(s.length() > 0)
+            {
+                 sum += Integer.valueOf(s); 
+            }
+         }
         return sum;
     }
     public static void main(String[] args) {
