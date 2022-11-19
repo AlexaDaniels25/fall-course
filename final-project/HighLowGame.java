@@ -29,23 +29,71 @@ public class HighLowGame {
         CardDeck deck = new CardDeck();
 
         Scanner myscanner = new Scanner(System.in); // use myscanner.next() to get user input
-
+        
         printInstrutions();
 
         // start the game by drawing a card at random and printing it to the terminal
         // System.out.println("Drawing a card at random . . . ");
         // write code here
-
+        boolean guessedCorrect;
+        Card currentCard = deck.pickCardatRandom();
+        System.out.println(currentCard);
         // get player's guess using myscanner
-        // System.out.println("Will the next randomly drawn card be higher (h) or lower (l)?");
+        System.out.println("Will the next randomly drawn card be higher (h) or lower (l)?");
         // write code here
+        String userSelection = myscanner.next();
+        Card nextCard = deck.pickCardatRandom();
+        System.out.println("Drawing a card at random . . . ");
+        System.out.println(nextCard);
 
-        // draw next card at random and print it to the terminal
-        // System.out.println("Drawing a card at random . . . ");
-        // write code here
+        if(userSelection == "h"){
+            if(nextCard.value > currentCard.value){
+                System.out.println("Congrats you guessed right!");
+                guessedCorrect = true;
+            }
+            else{
+                System.out.println("That's wrong. GAME OVER.");
+                guessedCorrect = false;
+            }
+        }
+        else{ //change to else if later when writing for potenital non h or l inputs
+            if(nextCard.value < currentCard.value){
+                System.out.println("Congrats you guessed right!");
+                guessedCorrect = true;
+            }
+            else{
+                System.out.println("That's wrong. GAME OVER.");
+                guessedCorrect = false;
+            }
+        }
 
-        // decide if player guessed correctly
-        // write code here
+        do{
+            System.out.println(currentCard);
+            System.out.println("Will the next randomly drawn card be higher (h) or lower (l)?");
+            //String userSelection = myscanner.next();
+            //Card nextCard = deck.pickCardatRandom();
+            System.out.println("Drawing a card at random . . . ");
+            System.out.println(nextCard);
+
+            if(userSelection == "h"){
+                if(nextCard.value > currentCard.value){
+                    System.out.println("Congrats you guessed right!");
+                    nextCard = currentCard;
+                }
+                else{
+                    System.out.println("That's wrong. GAME OVER.");
+                }
+            }
+            else{
+                if(nextCard.value < currentCard.value){
+                    System.out.println("Congrats you guessed right!");
+                    nextCard = currentCard;
+                }
+                else{
+                    System.out.println("That's wrong. GAME OVER.");
+                }
+            }
+        }while (guessedCorrect == true);
 
         myscanner.close();
     }
